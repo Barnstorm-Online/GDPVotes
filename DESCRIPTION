@@ -1,0 +1,21 @@
+Package: GDPVoters
+Title: Collate GDP to the Voter File
+Version: 0.1
+Authors@R: person("Michael", "Feher", email = "git@phearzero.com",
+                  role = c("aut", "cre"))
+Description: Takes data from <insert-GDP-source> and collates to
+  the <data-verse-source>. It contains helpful methods for dealing with both
+  sources such as getStateGDP()
+Depends: R (>= 3.1.0)
+License: MIT
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports:
+  dplyr,
+  readxl,
+  purrr,
+  tidyxl
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

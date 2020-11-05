@@ -1,0 +1,25 @@
+---
+title: "getGDP"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{get-gdp}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Overview:
+
+Get GDP attempts to get data.frames from a <insert-gdp-source> dataset
+
+```{r setup}
+library(GDPVoters)
+
+States<-getGDP(filepath="./lagdp1219.xlsx")
+print(States[["Louisiana"]])
+```

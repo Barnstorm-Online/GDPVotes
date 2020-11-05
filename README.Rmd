@@ -1,0 +1,20 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+Welcome to GDPVotes!
+
+```{r}
+library(GDPVoters)
+
+States<-getGDP(filepath="./data/lagdp1219.xlsx")
+print(States[["Louisiana"]])
+LA_GDP<-getStateGDP("Louisiana")
+print(LA_GDP)
+```
